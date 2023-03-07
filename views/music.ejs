@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>show track</title>
+  </head>
+
+  <body>
+    <h1>Artist: <%= response.data.artists[0].name %> </h1>
+    <img src="<%=response.data.album.images[0].url%>" alt="Album image">
+    <p>Song: <%= response.data.name %></p>
+    <p>Tipo: <%= response.data.type %> </p>
+  </body>
+</html>
+
